@@ -7,11 +7,11 @@ nasdaq_symbols = ["AAPL", "GOOGL", "META", "TSLA", "NVDA", "PYPL", "INTC", "CSCO
                   "AMAT", "ADSK", "VRTX", "WBA", "MNST", "IDXX", "MU", "LRCX", "EXC", "ORLY",
                   "NTES", "CTAS", "REGN", "SIRI", "SNPS", "ALGN", "ASML", "SGEN"]
 
-endUrl = ":NASDAQ"
+end_url = ":NASDAQ"
 url_base = "https://www.google.com/finance/quote/"
 print("Fetching data from: https://www.google.com/finance")
 for stock in nasdaq_symbols:
-    url = url_base + stock.upper() + endUrl
+    url = url_base + stock.upper() + end_url
     try:
         data = urllib.request.urlopen(url).read()
         data1 = data.decode("utf-8")
@@ -20,8 +20,8 @@ for stock in nasdaq_symbols:
             index = m.span()
             start = index[0] + 16
             end = index[1] + 8
-            newString = data1[start:end]
-            res = re.findall(r'\d+\.\d+|\d+', newString)
+            new_string = data1[start:end]
+            res = re.findall(r'\d+\.\d+|\d+', new_string)
             for r in res:
                 final = float(r)
                 print(f"Current price of {stock.upper()} is {final} USD")
