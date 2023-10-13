@@ -3,13 +3,13 @@ import urllib.request
 
 nasdaq_symbols = ["AAPL", "GOOGL", "META", "TSLA", "NVDA", "PYPL", "INTC", "CSCO",
                   "CMCSA", "PEP", "ADBE", "AVGO", "TXN", "COST", "NFLX", "TMUS", "CHTR", "SBUX",
-                  "AMGN", "QCOM", "MELI", "ATVI", "AMD", "GILD", "FISV", "BKNG", "ADI", "JD",
+                  "AMGN", "QCOM", "MELI", "ATVI", "AMD", "GILD", "BKNG", "ADI", "JD",
                   "AMAT", "ADSK", "VRTX", "WBA", "MNST", "IDXX", "MU", "LRCX", "EXC", "ORLY",
                   "NTES", "CTAS", "REGN", "SIRI", "SNPS", "ALGN", "ASML", "SGEN"]
 
 endUrl = ":NASDAQ"
 url_base = "https://www.google.com/finance/quote/"
-
+print("Fetching data from: https://www.google.com/finance")
 for stock in nasdaq_symbols:
     url = url_base + stock.upper() + endUrl
     try:
