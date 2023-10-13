@@ -5,7 +5,7 @@ nasdaq_symbols = ["AAPL", "GOOGL", "META", "TSLA", "NVDA", "PYPL", "INTC", "CSCO
                   "CMCSA", "PEP", "ADBE", "AVGO", "TXN", "COST", "NFLX", "TMUS", "CHTR", "SBUX",
                   "AMGN", "QCOM", "MELI", "ATVI", "AMD", "GILD", "FISV", "BKNG", "ADI", "JD",
                   "AMAT", "ADSK", "VRTX", "WBA", "MNST", "IDXX", "MU", "LRCX", "EXC", "ORLY",
-                  "NTES", "CTAS", "REGN", "SIRI", "ALXN", "SNPS", "ALGN", "ASML", "SGEN"]
+                  "NTES", "CTAS", "REGN", "SIRI", "SNPS", "ALGN", "ASML", "SGEN"]
 
 endUrl = ":NASDAQ"
 url_base = "https://www.google.com/finance/quote/"
